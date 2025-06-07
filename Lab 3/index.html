@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Pathfinding Visualizer (Dijkstra's Algorithm)</h1>
+  <div id="controls">
+    <button onclick="startVisualization()">Find Path</button>
+    <button onclick="resetGrid()">Reset Grid</button>
+  </div>
+
+  <div id="controls">
+  <label>Grid Size:
+    <input type="number" id="gridSize" value="10" min="5" max="30" />
+    <button onclick="applyGridSize()">Apply</button>
+  </label>
+
+  <label>Speed:
+    <select id="speedSelect">
+      <option value="100">Slow</option>
+      <option value="50" selected>Medium</option>
+      <option value="10">Fast</option>
+    </select>
+  </label>
+  
+  <button onclick="saveGrid()">Save Grid</button>
+  <button onclick="loadGrid()">Load Grid</button>
+</div>
+
+
+  <div id="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
